@@ -1,21 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
-pip install opencv-python 
-
-
-# In[3]:
-
-
-pip install mediapipe
-
-
-# In[ ]:
-
-
 import cv2
 import mediapipe as mp
 
@@ -31,7 +13,7 @@ hands = mp_hands.Hands(
 # Initialize MediaPipe Drawing module for drawing landmarks
 mp_drawing = mp.solutions.drawing_utils
 
-# Open a video capture object (0 for the default camera)
+# Open a video capture 
 cap = cv2.VideoCapture(0)
 
 while cap.isOpened():
@@ -65,8 +47,6 @@ while cap.isOpened():
 cap.release()
 cv2.destroyAllWindows()
 
-
-# In[ ]:
 
 
 
